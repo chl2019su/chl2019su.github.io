@@ -5,7 +5,11 @@ description: Variable-toe humanoid research platform for studying walking energy
 img: assets/img/projects/alice-se.jpg
 importance: 3
 category: humanoid
+lang: en
+permalink: /en/projects/alice-se/
 ---
+
+<div class="mb-4"><a href="{{ '/projects/alice-se/' | relative_url }}" lang="ko">한국어</a> · <strong>English</strong></div>
 
 ALICE SE is a compact humanoid platform developed to evaluate how an articulated toe affects bipedal walking efficiency.
 
@@ -25,4 +29,3 @@ ALICE SE is a compact humanoid platform developed to evaluate how an articulated
 - Joint research with the UCLA Robotics & Mechanisms Laboratory (RoMeLa).
 
 {% include figure.liquid loading="eager" path="assets/img/projects/alice-se.jpg" title="ALICE SE articulated-toe research platform" class="img-fluid rounded z-depth-1" %}
-

@@ -1,12 +1,17 @@
 ---
 layout: page
-title: projects
+title: 프로젝트
 permalink: /projects/
-description: Selected robotics projects spanning humanoids, rehabilitation systems, HRI, and biomimetic robots.
+lang: ko
+description: 휴머노이드, 재활, 인간-로봇 상호작용 및 생체모방 로봇 프로젝트.
 nav: true
 nav_order: 1
 horizontal: false
 ---
+
+<div class="mb-4" aria-label="언어 선택">
+  <strong>한국어</strong> · <a href="{{ '/en/projects/' | relative_url }}" lang="en">English</a>
+</div>
 
 <!-- pages/projects.md -->
 <div class="projects">
@@ -16,7 +21,8 @@ horizontal: false
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
+  {% assign localized_projects = site.projects | where: "lang", page.lang %}
+  {% assign categorized_projects = localized_projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
@@ -40,7 +46,8 @@ horizontal: false
 
 <!-- Display projects without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign localized_projects = site.projects | where: "lang", page.lang %}
+{% assign sorted_projects = localized_projects | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 

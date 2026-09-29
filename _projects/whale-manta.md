@@ -5,7 +5,11 @@ description: Biomimetic balloon robots inspired by the swimming motion of marine
 img: assets/img/projects/whale-manta.jpg
 importance: 7
 category: biomimetic
+lang: en
+permalink: /en/projects/whale-manta/
 ---
+
+<div class="mb-4"><a href="{{ '/projects/whale-manta/' | relative_url }}" lang="ko">한국어</a> · <strong>English</strong></div>
 
 Whale and Manta are helium-filled biomimetic robots that translate the motion of marine animals into lightweight indoor flight mechanisms.
 

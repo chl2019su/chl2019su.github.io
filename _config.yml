@@ -7,14 +7,14 @@ first_name: Jeonghoon
 middle_name:
 last_name: Choi
 contact_note: >
-  I am open to conversations about robotics engineering, mechanical design, and product development.
+  로봇 엔지니어링, 기구 설계 및 제품 개발에 관한 이야기를 언제든 환영합니다.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jeonghoon Choi's robotics engineering portfolio, featuring humanoid, rehabilitation, interaction, and biomimetic robots.
+  휴머노이드, 재활, 인터랙션 및 생체모방 로봇을 소개하는 최정훈의 로봇 엔지니어링 포트폴리오입니다.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: robotics, humanoid robot, rehabilitation robot, mechanical design, portfolio
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+keywords: robotics, humanoid robot, rehabilitation robot, mechanical design, portfolio, 로봇, 기구설계
+lang: ko # the default language of the site; English pages override this in front matter
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 

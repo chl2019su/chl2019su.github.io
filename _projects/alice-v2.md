@@ -5,7 +5,11 @@ description: Autonomous humanoid soccer robot developed from mechanical architec
 img: assets/img/projects/alice-v2.jpg
 importance: 1
 category: humanoid
+lang: en
+permalink: /en/projects/alice-v2/
 ---
+
+<div class="mb-4"><a href="{{ '/projects/alice-v2/' | relative_url }}" lang="ko">한국어</a> · <strong>English</strong></div>
 
 ALICE v2 is an autonomous humanoid soccer robot designed for natural walking, robust actuation, and integrated sensing.
 
@@ -24,4 +28,3 @@ ALICE v2 is an autonomous humanoid soccer robot designed for natural walking, ro
 - Tools: Creo / Pro/ENGINEER and ROS
 
 {% include figure.liquid loading="eager" path="assets/img/projects/alice-v2.jpg" title="ALICE v2 development overview" class="img-fluid rounded z-depth-1" %}
-

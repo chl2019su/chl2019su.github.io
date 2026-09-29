@@ -5,7 +5,11 @@ description: A 22-DoF humanoid platform redesigned for improved motion range and
 img: assets/img/projects/alice-v3.jpg
 importance: 2
 category: humanoid
+lang: en
+permalink: /en/projects/alice-v3/
 ---
+
+<div class="mb-4"><a href="{{ '/projects/alice-v3/' | relative_url }}" lang="ko">한국어</a> · <strong>English</strong></div>
 
 ALICE v3 extends the earlier platform with additional waist mobility, revised lower-body geometry, and a more capable upper body.
 
@@ -25,4 +29,3 @@ ALICE v3 extends the earlier platform with additional waist mobility, revised lo
 - Result: 3rd place, RoboCup 2021 Humanoid AdultSize
 
 {% include figure.liquid loading="eager" path="assets/img/projects/alice-v3.jpg" title="ALICE v3 platform overview" class="img-fluid rounded z-depth-1" %}
-

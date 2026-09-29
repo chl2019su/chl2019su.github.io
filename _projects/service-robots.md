@@ -5,7 +5,11 @@ description: A family of guide, ski-training, and conversational robots develope
 img: assets/img/projects/service-robots.jpg
 importance: 6
 category: service
+lang: en
+permalink: /en/projects/service-robots/
 ---
+
+<div class="mb-4"><a href="{{ '/projects/service-robots/' | relative_url }}" lang="ko">한국어</a> · <strong>English</strong></div>
 
 This collection covers several robots designed around direct interaction with people.
 

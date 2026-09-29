@@ -5,7 +5,11 @@ description: Interactive HRI robot designed for expressive behavior, maintainabi
 img: assets/img/projects/edie-v5.jpg
 importance: 5
 category: interaction
+lang: en
+permalink: /en/projects/edie-v5/
 ---
+
+<div class="mb-4"><a href="{{ '/projects/edie-v5/' | relative_url }}" lang="ko">한국어</a> · <strong>English</strong></div>
 
 EDIE v5 is a compact, character-driven interaction robot that combines vision-based user tracking, expressive displays, touch sensing, and mobile motion.
 
