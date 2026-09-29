@@ -1,0 +1,141 @@
+.alice-showcase {
+  --alice-accent: #a83b2d;
+  --alice-accent-dark: #73251d;
+  --alice-blue: #0b3558;
+  --alice-ink: #171717;
+  --alice-soft: #383532;
+  --alice-muted: #6b655f;
+  --alice-line: #e6ded5;
+  --alice-paper: #ffffff;
+  color: var(--alice-ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  margin-left: 50%;
+  max-width: 1160px;
+  transform: translateX(-50%);
+  width: min(1160px, calc(100vw - 48px));
+}
+
+body:has(.alice-showcase) { background: #fff; }
+body:has(.alice-showcase) .post-header { display: none; }
+.alice-showcase * { box-sizing: border-box; }
+.alice-showcase a { text-decoration: none; }
+
+.alice-language {
+  align-items: center;
+  color: var(--alice-muted);
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 750;
+  gap: 9px;
+  justify-content: flex-end;
+  padding: 20px 0 10px;
+}
+.alice-language strong { color: var(--alice-accent-dark); }
+
+.alice-hero {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  padding: 34px 0 46px;
+}
+.alice-eyebrow {
+  color: var(--alice-accent);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.09em;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+.alice-hero h1, .alice-section h2, .alice-card h3 {
+  color: var(--alice-ink);
+  letter-spacing: -0.035em;
+}
+.alice-hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.98;
+  margin: 0;
+}
+.alice-hero h1 span { color: var(--alice-accent-dark); display: block; }
+.alice-hero-copy { align-self: end; padding-bottom: 4px; }
+.alice-lede { color: var(--alice-soft); font-size: 1.08rem; margin: 0 0 22px; }
+.alice-tags, .alice-actions { display: flex; flex-wrap: wrap; gap: 9px; }
+.alice-tags { border-left: 4px solid var(--alice-accent); margin-bottom: 22px; padding-left: 14px; }
+.alice-tag { color: var(--alice-muted); font-size: 0.86rem; font-weight: 700; }
+
+.alice-button {
+  align-items: center;
+  border: 1px solid var(--alice-line);
+  border-radius: 8px;
+  color: var(--alice-ink) !important;
+  display: inline-flex;
+  font-size: 0.92rem;
+  font-weight: 800;
+  min-height: 43px;
+  padding: 9px 16px;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+.alice-button:hover { border-color: #c8b8aa; transform: translateY(-1px); }
+.alice-button.primary { background: var(--alice-ink); border-color: var(--alice-ink); color: #fff !important; }
+
+.alice-figure { background: var(--alice-paper); border: 1px solid var(--alice-line); border-radius: 10px; margin: 0; overflow: hidden; }
+.alice-figure a { display: block; }
+.alice-figure img { background: #fff; display: block; width: 100%; }
+.alice-figure img:hover { filter: saturate(1.03) contrast(1.02); }
+.alice-figure figcaption { border-top: 1px solid var(--alice-line); color: var(--alice-muted); font-size: 0.9rem; padding: 13px 16px 15px; }
+
+.alice-metrics { border-bottom: 1px solid var(--alice-line); border-top: 1px solid var(--alice-line); display: grid; grid-template-columns: repeat(4, 1fr); }
+.alice-metric { padding: 24px 18px; }
+.alice-metric + .alice-metric { border-left: 1px solid var(--alice-line); }
+.alice-metric strong { color: var(--alice-blue); display: block; font-size: 1.75rem; line-height: 1.1; }
+.alice-metric span { color: var(--alice-muted); font-size: 0.84rem; font-weight: 700; }
+
+.alice-section { padding: 56px 0; }
+.alice-section-heading { margin-bottom: 28px; max-width: 800px; }
+.alice-section h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.08; margin: 0; }
+.alice-intro-grid { display: grid; gap: 36px; grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr); }
+.alice-copy { color: var(--alice-soft); font-size: 1.04rem; }
+.alice-copy p:last-child { margin-bottom: 0; }
+.alice-takeaways, .alice-method-grid { display: grid; gap: 14px; }
+.alice-card { background: var(--alice-paper); border: 1px solid var(--alice-line); border-radius: 9px; padding: 20px 22px; }
+.alice-card-index { color: var(--alice-accent); display: block; font-size: 0.77rem; font-weight: 900; letter-spacing: 0.08em; margin-bottom: 12px; text-transform: uppercase; }
+.alice-card h3 { font-size: 1.12rem; line-height: 1.25; margin: 0 0 8px; }
+.alice-card p { color: var(--alice-muted); margin: 0; }
+
+.alice-band {
+  background: #f8f5f1;
+  border-bottom: 1px solid var(--alice-line);
+  border-top: 1px solid var(--alice-line);
+  margin-left: calc((100vw - min(1160px, calc(100vw - 48px))) / -2);
+  padding-left: calc((100vw - min(1160px, calc(100vw - 48px))) / 2);
+  padding-right: calc((100vw - min(1160px, calc(100vw - 48px))) / 2);
+  width: 100vw;
+}
+.alice-method-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 28px; }
+.alice-method-grid .alice-card { min-height: 225px; }
+.alice-method-grid .alice-card:nth-child(2) .alice-card-index { color: #1f669a; }
+.alice-method-grid .alice-card:nth-child(3) .alice-card-index { color: #14705b; }
+.alice-method-grid .alice-card:nth-child(4) .alice-card-index { color: #b77912; }
+
+.alice-validation-grid { align-items: start; display: grid; gap: 24px; grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr); }
+.alice-result { border-left: 4px solid var(--alice-blue); padding-left: 18px; }
+.alice-result h3 { font-size: 1.25rem; margin: 0 0 10px; }
+.alice-result ul { color: var(--alice-muted); margin: 0; padding-left: 20px; }
+.alice-cta { align-items: center; border-top: 1px solid var(--alice-line); display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; padding: 34px 0 56px; }
+.alice-cta p { color: var(--alice-muted); margin: 0; }
+
+@media (max-width: 980px) {
+  .alice-hero, .alice-intro-grid, .alice-validation-grid { grid-template-columns: 1fr; }
+  .alice-method-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .alice-showcase { width: calc(100vw - 28px); }
+  .alice-hero { padding-top: 22px; }
+  .alice-hero h1 { font-size: 2.55rem; }
+  .alice-metrics { grid-template-columns: repeat(2, 1fr); }
+  .alice-metric:nth-child(3) { border-left: 0; border-top: 1px solid var(--alice-line); }
+  .alice-metric:nth-child(4) { border-top: 1px solid var(--alice-line); }
+  .alice-method-grid { grid-template-columns: 1fr; }
+  .alice-method-grid .alice-card { min-height: 0; }
+  .alice-section { padding: 42px 0; }
+}
